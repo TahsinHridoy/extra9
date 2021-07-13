@@ -1,0 +1,113 @@
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+/* header desing */
+header{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+}
+.logo h1{
+    margin-top: 7px;
+    font-size: 800;
+    color: red;
+    font-weight: 200;
+}
+.logo span{
+    color: white;
+    font-weight: 800;
+}
+header section ul{
+    display: flex;
+    align-items: center;
+}
+header section a{
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 5px;
+    margin: 7px;
+    font-size: 19px;
+}
+header section a:hover{
+    color: rgb(73, 44, 177);
+    text-decoration: underline;
+}
+section ul input{
+    display: block;
+    padding: 4px;
+}
+section ul div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section ul .drop{
+    position: relative;
+    display: block;
+    color: red;
+    padding: 5px;
+    margin: 6px;
+    cursor: pointer;
+}
+section ul .down{
+    position: absolute;
+    top: 100%;
+    right : 5%;
+    transform: translate(50%);
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 2px 2px rgb(150, 139, 139);
+    z-index: 1;
+}
+section ul .down li:hover{
+    background: #000;
+}
+section ul .down a{
+    color: rgb(0, 0, 0);
+    padding: 12px 8px;
+    text-decoration: none;
+    display: block;
+}
+section ul .down a:hover{
+    color: white;
+}
+section ul .drop:hover .down{
+    display: block;
+}
+main img{
+    position: relative;
+    width: 100%;
+    min-width: 400px;
+}
+main section{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+main section h1{
+    font-size: 50px;
+    padding-bottom: 16px;
+
+}
+main section input{
+    padding: 11px;
+    margin: 15px;
+    background: blue;
+    color: white;
+    border-radius: 6px;
+    box-sizing: border-box;
+    box-shadow: 2px 3px black;
+}
+main section input:hover{
+    background-color: blueviolet;
+}
