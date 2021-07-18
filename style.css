@@ -27,6 +27,8 @@ header{
 header section ul{
     display: flex;
     align-items: center;
+    padding: 0;
+    margin: 0;
 }
 header section a{
     color: rgb(255, 255, 255);
@@ -43,6 +45,9 @@ section ul input{
     display: block;
     padding: 4px;
 }
+section ul input:focus + button{
+    border: 2px solid rgb(241, 231, 231);
+}
 section ul div{
     display: flex;
     align-items: center;
@@ -50,31 +55,50 @@ section ul div{
 }
 section ul .drop{
     position: relative;
-    display: block;
-    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #c7c0c0;
     padding: 5px;
     margin: 6px;
     cursor: pointer;
 }
+section ul .drop:hover{
+    background-color: rgb(231, 231, 231);
+
+}
 section ul .down{
     position: absolute;
     top: 100%;
-    right : 5%;
+    right : 100%;
     transform: translate(50%);
     display: none;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 2px 2px rgb(150, 139, 139);
+    background-color: #ffffff;
+    min-width: 120px;
+    box-shadow: 3px 2px rgb(233, 223, 223);
     z-index: 1;
+}
+section ul .down li{
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 section ul .down li:hover{
     background: #000;
 }
 section ul .down a{
     color: rgb(0, 0, 0);
-    padding: 12px 8px;
+    padding: 8px;
     text-decoration: none;
     display: block;
+}
+section ul .drop i{
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+section ul .drop i:hover{
+    color: rgb(0, 0, 0);
 }
 section ul .down a:hover{
     color: white;
@@ -82,32 +106,131 @@ section ul .down a:hover{
 section ul .drop:hover .down{
     display: block;
 }
-main img{
-    position: relative;
-    width: 100%;
-    min-width: 400px;
+section .search button{
+    border: none;
+    padding: 5px;
 }
+section .search i{
+    border: none;
+}
+
+
+/* start main  */
+
 main section{
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 140px;
 }
-main section h1{
-    font-size: 50px;
-    padding-bottom: 16px;
+main .pic img{
+    border-radius: 50%;
+    background-color: rgb(167, 177, 29);
+    
+}
+main .title{
+    padding-left: 40px;
+}
+main .title h6{
+    opacity: .7;
+}
+main .title h1{
+    font-size: 90px;
+    font-weight: 800;
+}
+main .title span{
+    color: red;
+    font-weight: 200;
+    font-style: italic;
+}
+main article{
+    display: flex;
+}
+article input{
+    padding: 15px 25px 15px 25px;
+    margin-top: 23px;
+    border-radius: 9em / 9em;
+}
+input[value="Download CV"] {
+    border: 4px solid blue;
+    transition: background-color .6s;
+    cursor: pointer;
+}
+input[value="Contact"]{
+    border: 4px solid rgb(102, 95, 95);
+    margin-left: 6px;
+    transition: background-color .6s;
+    cursor: pointer;
+}
+input[value="Download CV"]:hover{
+    color: white;
+    background-color: blue;
+}
+input[value="Contact"]:hover{
+    background-color: rgb(102, 95, 95);
+}
+/* start address */
+main address h2{
+    font-weight: 400;
+    margin: 10px;
+    padding: 6px;
+    border-bottom: 2px double blue;
+}
+address .plus1{
+    display: flex;
+    margin-left: 25px;
+}
+
+address .para i{
+    color: black;
+    font-size: 45px;
 
 }
-main section input{
-    padding: 11px;
-    margin: 15px;
-    background: blue;
-    color: white;
-    border-radius: 6px;
-    box-sizing: border-box;
-    box-shadow: 2px 3px black;
+address .plus2{
+    display: flex;
+    margin-right: 25px;
 }
-main section input:hover{
-    background-color: blueviolet;
+address .para1 i{
+    color: black;
+    font-size: 45px;
+
+}
+address nav .icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+address .plus3{
+    display: flex;
+    margin-left: 25px;
+}
+
+address .para3 i{
+    color: black;
+    font-size: 45px;
+
+}
+address .plus4{
+    display: flex;
+    margin-right: 25px;
+}
+address .para4 i{
+    color: black;
+    font-size: 45px;
+
+}
+address nav .icon3{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+
+main .test{
+    font-weight: 400;
+    margin: 10px;
+    padding: 6px;
+    margin-top: 30px;
+    border-bottom: 2px double blue;
 }
