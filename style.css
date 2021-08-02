@@ -3,7 +3,17 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
+
+    
 }
+
+body{
+    
+    margin: 33px;
+    border-radius: 12px;
+    border-style: outset;
+}
+
 /* header desing */
 header{
     background-color: #000;
@@ -16,7 +26,6 @@ header{
 }
 .logo h1{
     margin-top: 7px;
-    font-size: 800;
     color: red;
     font-weight: 200;
 }
@@ -43,7 +52,7 @@ header section a:hover{
 }
 section ul input{
     display: block;
-    padding: 4px;
+    padding: 3px;
 }
 section ul input:focus + button{
     border: 2px solid rgb(241, 231, 231);
@@ -75,13 +84,14 @@ section ul .down{
     display: none;
     background-color: #ffffff;
     min-width: 120px;
-    box-shadow: 3px 2px rgb(233, 223, 223);
+    box-shadow: 3px 2px 6px 3px rgb(233, 223, 223);
     z-index: 1;
 }
 section ul .down li{
     height: 100%;
     width: 100%;
     margin: 0;
+    transition: background .3s ease .1s;
 }
 section ul .down li:hover{
     background: #000;
@@ -105,7 +115,19 @@ section ul .down a:hover{
 }
 section ul .drop:hover .down{
     display: block;
+    animation-name: name;
+    animation-duration: 1s;
+    animation-timing-function: ease;
 }
+
+
+
+/* for animation */
+@keyframes name {
+    from {top: 55px; opacity: 0;}
+    to {top: 22px; opacity: 1;}
+}
+
 section .search button{
     border: none;
     padding: 5px;
@@ -198,6 +220,7 @@ address .para1 i{
 address nav .icon{
     display: flex;
     justify-content: space-between;
+    margin-top: 25px;
 }
 
 
@@ -234,3 +257,151 @@ main .test{
     margin-top: 30px;
     border-bottom: 2px double blue;
 }
+
+main .field{
+    display: flex;
+    justify-content: space-between;
+}
+fieldset legend img{
+    border-radius: 50%;
+}
+fieldset .ledend{
+    margin-left: 45px;
+    padding: 5px;
+}
+fieldset .ledend i{
+    opacity: .4;
+}
+fieldset{
+    margin: 35px;
+}
+
+
+
+/* aside start */
+aside .cli{
+    font-weight: 400;
+    margin: 10px;
+    padding: 6px;
+    margin-top: 30px;
+    border-bottom: 2px double blue;
+}
+
+
+aside .flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
+}
+
+aside section .ho1{
+    font-weight: 600;
+    opacity: .6;
+    cursor: pointer;
+}
+aside section .ho1:hover{
+    opacity: 1;
+}
+aside section .ho1 span{
+    font-weight: 100;
+    opacity: .3;
+}
+aside section .hoi2{
+    font-weight: bold;
+    opacity: .6;
+    cursor: pointer;
+}
+aside section .hoi2:hover{
+    opacity: 1;
+}
+aside section .hoi3{
+    font-weight: bolder;
+    font-size: xx-large;
+    opacity: .3;
+    cursor: pointer;
+}
+aside section .hoi3:hover{
+    opacity: 1;
+}
+aside section .hoi4{
+    font-weight: -109;
+    opacity: .8;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+} 
+aside section .hoi4:hover{
+    opacity: 1;
+}
+aside section .hoi5{
+    font-weight: 800;
+    opacity: .6;
+    text-decoration: underline overline 4px;
+    cursor: pointer;
+} 
+aside section .hoi5:hover{
+    opacity: 1;
+}
+aside section .hoi6{
+    font-weight: 600;
+    opacity: .7;
+    text-decoration: underline 2px;
+    cursor: pointer;
+}
+aside section .hoi6:hover{
+    opacity: 1;
+}
+aside section .hoi6 span{
+    font-weight: 100;
+    opacity: .3;
+    text-decoration: overline 2px;
+}
+
+
+aside .grid{
+    display: flex;
+    justify-content: space-around;
+   
+}
+aside .grid .fun{
+    display: inline-block;
+    border: 1.5px solid rgb(190, 179, 179);
+    text-align: center;
+    border-radius: 6px;
+    padding: 70px;
+    margin: 14px;
+}
+aside .grid .fun:hover{
+    box-shadow: 5px 10px 11px 8px rgb(190, 179, 179);
+    
+}
+aside .grid .fun i{
+    font-size: 45px;
+}
+aside .grid .fun h3{
+    font-weight: 800;
+}
+aside .grid .fun p{
+    font-size: 70px;
+    opacity: .3;
+}
+
+/* start footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: .5px solid rgb(190, 179, 179);
+    padding: 16px;
+}
+footer a{
+    display: inline;
+    opacity: .5;
+    padding: 7px;
+    margin: 6px;
+}
+footer a:hover{
+    opacity: .9;
+}
+
